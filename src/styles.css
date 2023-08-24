@@ -1,0 +1,70 @@
+#app { height: 100% }
+html,
+body {
+    position: relative;
+    height: 100%;
+}
+
+body {
+    background: #111111;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    width: 100vw;
+    height: 100vh;
+    color: #000;
+    margin: 0;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+}
+
+.swiper {
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    max-width: 80%;
+}
+
+.swiper .swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 400px;
+    height: 280px;
+    /*-webkit-box-reflect: below 1px;*/
+
+}
+.swiper-slide img {
+    display: block;
+    width: 100%;
+}
+
+@media only screen and (orientation: portrait)
+and (min-device-width: 319px)
+and (max-device-width: 480px) {
+    .swiper .swiper-slide {
+        background-position: center;
+        background-size: cover;
+        width: 180px;
+        height: 180px;
+    }
+}
+@media only screen and (min-width: 1550px) {
+    .swiper .swiper-slide {
+        background-position: center;
+        background-size: cover;
+        width: 680px;
+        height: 300px;
+    }
+}
+
+@media screen and (orientation:landscape)
+and (min-device-width: 319px)
+and (max-device-width: 480px) {
+    .swiper .swiper-slide {
+        background-position: center;
+        background-size: cover;
+        width: 350px;
+        height: 220px;
+
+    }
+}
